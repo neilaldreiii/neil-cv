@@ -82,3 +82,55 @@
     transform: rotate(180deg);
     transition: transform 0.5s;
 }
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+  
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #0066FFcc;
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    margin-left: -3px;
+    z-index: -1;
+}
+.timeline-item {
+    display: flex;
+    flex-flow: row;
+}
+.date {
+    position: relative;
+    background-color: inherit;
+    width: 30%;
+    padding: 30px;
+    text-align: right;
+}
+.date::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -8px;
+    background-color: #c4c4c4;
+    border: 2px solid rgb(0, 102, 255);
+    top: 30px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.description {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-bottom: 1px dashed rgb(161, 161, 161);
+}
+.timeline .location {
+    font-size: 10pt;
+}
