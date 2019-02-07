@@ -11,12 +11,6 @@
                 </div>
             </div>
         </div>
-        <button class="show-additional-skills" @click="skillsDisplay = !skillsDisplay">
-            <span :class="{ active: skillsDisplay }"><i class="medium material-icons">expand_more</i></span>  
-            <span v-if="!skillsDisplay">Show More</span>
-            <span v-else>Show Less</span> 
-            <span :class="{ active: skillsDisplay }"><i class="medium material-icons">expand_more</i></span>  
-        </button>
         <div class="skills" v-if="skillsDisplay">
             <div class="skill" v-for="skill in skills" :key="skill.id">
                 <p>{{ skill.language }} <span>{{ skill.level }}</span> </p>
@@ -25,6 +19,13 @@
                 </div>
             </div>
         </div>
+        <button class="show-additional-skills" @click="skillsDisplay = !skillsDisplay">
+            <span v-if="!skillsDisplay">Show More</span>
+            <span v-else>Show Less</span>  
+            <!-- <span :class="{ active: skillsDisplay }"><i class="medium material-icons">expand_more</i></span>   -->
+            <span v-if="!skillsDisplay"><i class="fas fa-expand-arrows-alt"></i></span>
+            <span v-else><i class="fas fa-compress-arrows-alt"></i></span>
+        </button>
     </div>
 </template>
 

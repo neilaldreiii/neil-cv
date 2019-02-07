@@ -4,7 +4,26 @@
             <h1>Portfolio</h1>
         </header>
         <div class="content">
-
+            <div class="projects">
+                <div class="project">
+                    <div class="project-img maadds">
+                        <div class="project-links">
+                            <h1>MAADD'S Enterprise</h1>
+                            <a href="#" class="git"> <span><i class="fas fa-code-branch"></i></span> GitHub</a>
+                            <a href="#" class="visit"> <span><i class="fas fa-external-link-alt"></i></span> Visit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-img triton">
+                        <div class="project-links">
+                            <h1>Triton Swim Club</h1>
+                            <a href="#" class="git"> <span class="git"><i class="fas fa-code-branch"></i></span> GitHub</a>
+                            <p> <span><i class="fas fa-dizzy"></i></span> This project has not been deployed yet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -14,12 +33,15 @@ export default {
     name: "portfolio",
     data() {
         return {
-            
+
         }
     }
 }
 </script>
 
-<style>
-
+<style scoped>
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 15px 0;
+}
 </style>

@@ -70,7 +70,7 @@
     transition: color 0.5s;
 }
 .show-additional-skills span {
-    margin: auto;
+    margin: auto 5px;
     font-size: 12pt;
     opacity: 1;
 }
@@ -78,19 +78,14 @@
     cursor: pointer;
     color: rgb(0, 42, 105);
 }
-.active {
-    transform: rotate(180deg);
-    transition: transform 0.5s;
-}
 
-/* The actual timeline (the vertical ruler) */
+/* Timeline */
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 20px auto;
 }
-  
-/* The actual timeline (the vertical ruler) */
+
 .timeline::after {
     content: '';
     position: absolute;
@@ -105,6 +100,7 @@
 .timeline-item {
     display: flex;
     flex-flow: row;
+    margin: 10px 0;
 }
 .date {
     position: relative;
@@ -133,4 +129,61 @@
 }
 .timeline .location {
     font-size: 10pt;
+}
+.project {
+    height: 425px;
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.project-img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.5s;
+}
+.maadds {
+    background-image: url('../images/MAADDSEnterprise.jpg');
+}
+.triton {
+    background-image: url('../images/TritonSwimClub.jpg');
+}
+.project-links {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.5s, background 0.5s;
+    color: #FFF;
+}
+.project-img:hover {
+    transform: scale(1.07, 1.07);
+}
+.project-img:hover .project-links {
+    opacity: 1;
+}
+.project-links a {
+    text-decoration: none;
+    color: #FFF;
+    display: inline-block;
+    margin: 10px auto;
+    padding: 5px 25px;
+    transition: background 0.5s, color .5s;
+    border-radius: 50px;
+}
+.project-links a.visit:hover {
+    background: #42b883;
+}
+.project-links a.git:hover{
+    background: #F1502F;
+    color: #3E2C00;
+    border-radius: 50px;
 }
