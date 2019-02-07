@@ -10,16 +10,16 @@
       </div>
     </div>
     <app-footer></app-footer>
-  </div>
+  </div>  
 </template>
 
 <script>
-import Profile from '@/components/Profile';
-import Intro from '@/components/Introduction';
-import Skills from '@/components/Skills';
-import Timeline from '@/components/Timeline';
-import Portfolio from '@/components/Portfolio';
-import Footer from '@/components/Footer';
+import Profile from "@/components/Profile";
+import Intro from "@/components/Introduction";
+import Skills from "@/components/Skills";
+import Timeline from "@/components/Timeline";
+import Portfolio from "@/components/Portfolio";
+import AppFooter from "@/components/AppFooter";
 
 export default {
   name: "home",
@@ -29,7 +29,7 @@ export default {
     "app-skills": Skills,
     "app-timeline": Timeline,
     "app-portfolio": Portfolio,
-    "app-footer": Footer
+    "app-footer": AppFooter
   }
 };
 </script>

@@ -122,11 +122,7 @@ export default {
                     language: "Responsive Web Design",
                     level: "70%"
                 },
-                {
-                    id: 13,
-                    language: "Photoshop",
-                    level: "30%"
-                }
+                { id: 13, language: "Photoshop", level: "30%" }
             ],
             skillsDisplay: false
         }

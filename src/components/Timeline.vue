@@ -38,27 +38,27 @@ export default {
         return {
             educations: [
                 {
-                    school: 'University Of Nueva Caceres',
-                    date: '2016 - Present',
-                    degree: 'Bachelor of Science in Information Technology',
-                    location: "Naga City, Camarines Sur, PH"
-                },
-                {
-                    school: 'Naga College Foundation',
-                    date: '2011 - 2013',
-                    degree: 'Bachelor Of Science in Criminology',
+                    school: "University Of Nueva Caceres",
+                    date: "2016 - Present",
+                    degree: "Bachelor of Science in Information Technology",
                     location: "Naga City, Camarines Sur, PH"
                 },
                 {
                     school: "Naga College Foundation",
-                    date: '2007 - 2011',
-                    degree: 'High School',
+                    date: "2011 - 2013",
+                    degree: "Bachelor Of Science in Criminology",
                     location: "Naga City, Camarines Sur, PH"
                 },
                 {
-                    school: 'Naga Central School I',
-                    date: '2001 - 2007',
-                    degree: 'Elementary',
+                    school: "Naga College Foundation",
+                    date: "2007 - 2011",
+                    degree: "High School",
+                    location: "Naga City, Camarines Sur, PH"
+                },
+                {
+                    school: "Naga Central School I",
+                    date: "2001 - 2007",
+                    degree: "Elementary",
                     location: "Naga City, Camarines Sur, PH"
                 }
             ],
@@ -88,12 +88,11 @@ export default {
 </script>
 
 <style scoped>
-    .description h1, .date h3 {
-        font-family: 'Open Sans', sans-serif;
-    }
-    p {
-        margin: 16px 0;
-        padding: 0;
-        font-size: 11pt;
-    }
+.description h1, .date h3 {
+    font-family: "Open Sans", sans-serif;
+}
+p {
+    margin: 16px 0;
+    font-size: 11pt;
+}
 </style>
