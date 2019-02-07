@@ -9,8 +9,8 @@
                     <div class="project-img maadds">
                         <div class="project-links">
                             <h1>MAADD'S Enterprise</h1>
-                            <a href="#" class="git"> <span><i class="fas fa-code-branch"></i></span> GitHub</a>
-                            <a href="#" class="visit"> <span><i class="fas fa-external-link-alt"></i></span> Visit</a>
+                            <a href="https://github.com/neilaldreiii/MAADDS" target="_blank" class="git"> <span><i class="fas fa-code-branch"></i></span> GitHub</a>
+                            <a href="https://maaddsenterprise.firebaseapp.com/" class="visit" target="_blank"> <span><i class="fas fa-external-link-alt"></i></span> &nbsp; Visit</a>
                         </div>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
                     <div class="project-img triton">
                         <div class="project-links">
                             <h1>Triton Swim Club</h1>
-                            <a href="#" class="git"> <span class="git"><i class="fas fa-code-branch"></i></span> GitHub</a>
+                            <a href="https://github.com/neilaldreiii/Triton-Laravel" class="git" target="_blank"> <span class="git"><i class="fas fa-code-branch"></i></span> GitHub</a>
                             <p> <span><i class="fas fa-dizzy"></i></span> This project has not been deployed yet.</p>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style scoped>
-h1 {
+.content h1 {
     font-family: 'Open Sans', sans-serif;
     margin: 15px 0;
 }

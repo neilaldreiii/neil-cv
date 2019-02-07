@@ -1,12 +1,15 @@
 <template>
   <div class="container">
-    <app-profile></app-profile>
-    <div class="wrapper">
-      <app-intro></app-intro>
-      <app-skills></app-skills>
-      <app-timeline></app-timeline>
-      <app-portfolio></app-portfolio>
+    <div class="app-content">
+      <app-profile></app-profile>
+      <div class="wrapper">
+        <app-intro></app-intro>
+        <app-skills></app-skills>
+        <app-timeline></app-timeline>
+        <app-portfolio></app-portfolio>
+      </div>
     </div>
+    <app-footer></app-footer>
   </div>
 </template>
 
@@ -16,6 +19,7 @@ import Intro from '@/components/Introduction';
 import Skills from '@/components/Skills';
 import Timeline from '@/components/Timeline';
 import Portfolio from '@/components/Portfolio';
+import Footer from '@/components/Footer';
 
 export default {
   name: "home",
@@ -24,7 +28,8 @@ export default {
     "app-intro": Intro,
     "app-skills": Skills,
     "app-timeline": Timeline,
-    "app-portfolio": Portfolio
+    "app-portfolio": Portfolio,
+    "app-footer": Footer
   }
 };
 </script>
