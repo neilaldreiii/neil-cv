@@ -1,6 +1,5 @@
 .profile {
-    height: 100vh;
-    border: 1px solid #ddd;
+    padding: 10px;
 }
 .profile-picture-container {
     width: 275px;
@@ -12,6 +11,10 @@
     margin: 25px;
 }
 .profile-picture {
+    background-image: url('../images/neil.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100%;
     border-radius: 50%;
