@@ -40,7 +40,6 @@ a.github {
 
 /* Skills */
 .expertise, .skills {
-    margin: 25px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(auto, auto);
@@ -69,18 +68,21 @@ a.github {
 }
 .progress-fill {
     height: 100%;
-    background: tomato;
+    background: #e8554e;
 }
 .show-additional-skills {
     border: none;
     outline: none;
-    color: #0066FF;
+    background: none;
+    background: #42b883;
+    padding: 10px;
+    border-radius: 3px;
+    color: #FFF;
     display: block;
     margin: 24px auto;
-    background: none;
     display: flex;
     flex-flow: row;
-    transition: color 0.5s;
+    transition: background 0.5s;
 }
 .show-additional-skills span {
     margin: auto 5px;
@@ -89,7 +91,7 @@ a.github {
 }
 .show-additional-skills:hover {
     cursor: pointer;
-    color: rgb(0, 42, 105);
+    background: #3d8a67;
 }
 
 /* Timeline */
@@ -102,7 +104,7 @@ a.github {
     content: '';
     position: absolute;
     width: 2px;
-    background-color: #0066FF;
+    background-color: #363636;
     top: 0;
     bottom: 0;
     left: 30%;
@@ -127,8 +129,8 @@ a.github {
     width: 15px;
     height: 15px;
     right: -8px;
-    background-color: #e9e9e9;
-    border: 2px solid #0066FF;
+    background-color: #F5F5F5;
+    border: 2px solid #363636;
     top: 30px;
     border-radius: 50%;
     z-index: 1;
@@ -149,6 +151,7 @@ a.github {
     position: relative;
     border-radius: 4px;
     overflow: hidden;
+    box-shadow: 0 0 12px #ccc;
 }
 .project-img {
     height: 100%;
@@ -206,7 +209,6 @@ a.github {
     border-top: 1px solid #ddd;
     margin: auto;
     padding: 25px;
-    background: #FFF;
     text-align: center;
 }
 .footer p {
