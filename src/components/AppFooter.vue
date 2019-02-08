@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    name: "footer",
+    name: "app-footer",
     data() {
         return {
 
@@ -28,15 +28,5 @@ export default {
 h1 {
     font-family: 'Open Sans', sans-serif;
     margin: 15px 0;
-}
-.footer-social {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    width: 30%;
-    padding: 20px;
-}
-.footer-social a {
-    font-size: 28pt;
 }
 </style>

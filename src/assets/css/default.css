@@ -9,16 +9,18 @@ body {
     background: #F5F5F5;
     font-family: 'Open Sans', sans-serif;
 }
-
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     margin: 0;
-    font-family: 'Major Mono Display', monospace;
 }
 .app-content {
     display: flex;
     flex-flow: row;
     padding: 25px;
+    width: 100%;
+}
+.wrapper {
+    flex-grow: 1;
 }
 .sub-container {
     width: 60%;
@@ -26,7 +28,6 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 .header {
-    border: 1px solid rgb(173, 173, 173);
     background: rgba(109, 109, 109, 0.8);
     padding: 15px 10px;
     z-index: 100;
@@ -36,6 +37,374 @@ h1, h2, h3, h4, h5, h6 {
     padding: 30px;
 }
 
-@media only screen and (max-width: 420px) {
-    
+@media only screen and (max-width: 320px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Open Sans', sans-serif;
+    }
+    .app-content {
+        flex-flow: column;
+        padding: 5px;
+    }
+    .sub-container {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .header {
+        padding: 5px;
+        text-align: center;
+    }
+    .header h1 {
+        font-size: 18pt;
+    }
+    .content {
+        padding: 15px;
+    }
+    .profile {
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .profile-picture-container {
+        width: 175px!important;
+        height: 175px!important;
+        margin: auto!important;
+        padding: 2px!important;
+    }
+    .profile-info, .profile-contacts, .profile-social {
+        margin: auto;
+        text-align: center;
+    }
+    .expertise, .skills {
+        margin: 0;
+        display: flex!important;
+        flex-flow: column;
+    }
+    .skill {
+        box-shadow: 0 0 8px #ccc;
+        margin: 5px 0;
+    }
+    .timeline::after, .date::after {
+        display: none;
+    }
+    .timeline-item {
+        flex-flow: column!important;
+    }
+    .date {
+        width: 100%!important;
+        text-align: center!important;
+        padding: 6px!important;
+        color: #0066FFcc;
+    }
+    .description {
+        width: 100%!important;
+        text-align: center;
+    }
+    .description h1 {
+        font-size: 18pt;
+    }
+    .project {
+        height: 220px!important;
+    }
+    .project-links {
+        display: none!important;
+    }
+    .mobile {
+        display: flex!important;
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+    .mobile a{
+        color: #666!important;
+    }
+    .footer h1 {
+        font-size: 18pt;
+    }
+    .footer-social a {
+        font-size: 18pt!important;
+    }
+}
+@media only screen and (max-width: 375px) and (min-width: 321px)  {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Open Sans', sans-serif;
+    }
+    .app-content {
+        flex-flow: column;
+        padding: 5px;
+    }
+    .sub-container {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .header {
+        padding: 5px;
+        text-align: center;
+    }
+    .header h1 {
+        font-size: 18pt;
+    }
+    .content {
+        padding: 15px;
+    }
+    .profile {
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .profile-picture-container {
+        width: 175px!important;
+        height: 175px!important;
+        margin: auto!important;
+        padding: 2px!important;
+    }
+    .profile-info, .profile-contacts, .profile-social {
+        margin: auto;
+        text-align: center;
+    }
+    .expertise, .skills {
+        margin: 0;
+        display: flex!important;
+        flex-flow: column;
+    }
+    .skill {
+        box-shadow: 0 0 8px #ccc;
+        margin: 5px 0;
+    }
+    .timeline::after, .date::after {
+        display: none;
+    }
+    .timeline-item {
+        flex-flow: column!important;
+    }
+    .date {
+        width: 100%!important;
+        text-align: center!important;
+        padding: 6px!important;
+        color: #0066FFcc;
+    }
+    .description {
+        width: 100%!important;
+        text-align: center;
+    }
+    .description h1 {
+        font-size: 18pt;
+    }
+    .project {
+        height: 220px!important;
+    }
+    .project-links {
+        display: none!important;
+    }
+    .mobile {
+        display: flex!important;
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+    .mobile a{
+        color: #666!important;
+    }
+    .footer h1 {
+        font-size: 18pt;
+    }
+    .footer-social a {
+        font-size: 18pt!important;
+    }
+}
+@media only screen and (max-width: 425px) and (min-width: 376px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Open Sans', sans-serif;
+    }
+    .app-content {
+        flex-flow: column;
+        padding: 5px;
+    }
+    .sub-container {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .header {
+        padding: 5px;
+        text-align: center;
+    }
+    .header h1 {
+        font-size: 18pt;
+    }
+    .content {
+        padding: 15px;
+    }
+    .profile {
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .profile-picture-container {
+        width: 175px!important;
+        height: 175px!important;
+        margin: auto!important;
+        padding: 2px!important;
+    }
+    .profile-info, .profile-contacts, .profile-social {
+        margin: auto;
+        text-align: center;
+    }
+    .expertise, .skills {
+        margin: 0;
+        display: flex!important;
+        flex-flow: column;
+    }
+    .skill {
+        box-shadow: 0 0 8px #ccc;
+        margin: 5px 0;
+    }
+    .timeline::after, .date::after {
+        display: none;
+    }
+    .timeline-item {
+        flex-flow: column!important;
+    }
+    .date {
+        width: 100%!important;
+        text-align: center!important;
+        padding: 6px!important;
+        color: #0066FFcc;
+    }
+    .description {
+        width: 100%!important;
+        text-align: center;
+    }
+    .description h1 {
+        font-size: 18pt;
+    }
+    .project {
+        height: 220px!important;
+    }
+    .project-links {
+        display: none!important;
+    }
+    .mobile {
+        display: flex!important;
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+    .mobile a{
+        color: #666!important;
+    }
+    .footer h1 {
+        font-size: 18pt;
+    }
+    .footer-social a {
+        font-size: 18pt!important;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Open Sans', sans-serif;
+    }
+    .app-content {
+        flex-flow: column;
+        padding: 5px;
+    }
+    .sub-container {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .header {
+        padding: 5px;
+        text-align: center;
+    }
+    .header h1 {
+        font-size: 18pt;
+    }
+    .content {
+        padding: 15px;
+    }
+    .profile {
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .profile-picture-container {
+        width: 175px!important;
+        height: 175px!important;
+        margin: auto!important;
+        padding: 2px!important;
+    }
+    .profile-info, .profile-contacts, .profile-social {
+        margin: auto;
+        text-align: center;
+    }
+    .expertise, .skills {
+        margin: 0;
+        display: flex!important;
+        flex-flow: column;
+    }
+    .skill {
+        box-shadow: 0 0 8px #ccc;
+        margin: 5px 0;
+    }
+    .timeline::after, .date::after {
+        display: none;
+    }
+    .timeline-item {
+        flex-flow: column!important;
+    }
+    .date {
+        width: 100%!important;
+        text-align: center!important;
+        padding: 6px!important;
+        color: #0066FFcc;
+    }
+    .description {
+        width: 100%!important;
+        text-align: center;
+    }
+    .description h1 {
+        font-size: 18pt;
+    }
+    .project {
+        height: 220px!important;
+    }
+    .project-links {
+        display: none!important;
+    }
+    .mobile {
+        display: flex!important;
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+    .mobile a{
+        color: #666!important;
+    }
+    .footer h1 {
+        font-size: 18pt;
+    }
+    .footer-social a {
+        font-size: 18pt!important;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    h1 {
+        font-size: 22pt;
+    }
+    .sub-container {
+        width: 100%!important;
+        margin: 15px!important;
+    }
+    .profile-picture-container {
+        width: 175px!important;
+        height: 175px!important;
+    }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+    .sub-container {
+        width: 80%!important;
+        margin: 15px auto !important;
+    }
+    .profile-picture-container {
+        width: 225px!important;
+        height: 225px!important;
+    }
 }

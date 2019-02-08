@@ -14,6 +14,10 @@
                         </div>
                     </div>
                 </div>
+                <div class="mobile">
+                    <a href="https://github.com/neilaldreiii/MAADDS" target="_blank" class="git"> <span><i class="fas fa-code-branch"></i></span> GitHub</a>
+                    <a href="https://maaddsenterprise.firebaseapp.com/" class="visit" target="_blank"> <span><i class="fas fa-external-link-alt"></i></span> &nbsp; Visit</a>
+                </div>
                 <div class="project">
                     <div class="project-img triton">
                         <div class="project-links">
@@ -22,6 +26,10 @@
                             <p> <span><i class="fas fa-dizzy"></i></span> This project has not been deployed yet.</p>
                         </div>
                     </div>
+                </div>
+                <div class="mobile">
+                    <a href="https://github.com/neilaldreiii/Triton-Laravel" class="git" target="_blank"> <span class="git"><i class="fas fa-code-branch"></i></span> GitHub</a>
+                            <p> <span><i class="fas fa-dizzy"></i></span> This project has not been deployed yet.</p>
                 </div>
             </div>
         </div>
